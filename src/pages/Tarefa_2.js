@@ -165,16 +165,14 @@ export default function Tarefa_2() {
     //
 
     function novoAfastamento() {
-        if (!novoAfastamentoVisible) {
-            setState({
-                ...state,
-                novaDataTermino: null,
-                novaSituacao: null,
-                novaQuantidadeDias: null,
-                novaPrevDataTermino: null,
-                novaPrevQuantidadeDias: null
-            })
-        }
+        setState({
+            ...state,
+            novaDataTermino: null,
+            novaSituacao: null,
+            novaQuantidadeDias: null,
+            novaPrevDataTermino: null,
+            novaPrevQuantidadeDias: null
+        })
         setNovoAfastamentoVisible(!novoAfastamentoVisible ? true : false);
     }
 
